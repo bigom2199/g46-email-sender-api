@@ -21,9 +21,11 @@ public class Email {
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID",strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
-    @Column( name = " from ",nullable = false)
+
+    @Column( name = " _from ",nullable = false)
     private String from;
-    @Column(name = "to",nullable = false)
+
+    @Column(name = "_to",nullable = false)
     private String to;
 
     private String subject ;

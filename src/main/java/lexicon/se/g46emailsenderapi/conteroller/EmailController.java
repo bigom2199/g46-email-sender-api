@@ -24,6 +24,6 @@ public class EmailController {
         System.out.println("DTO:" + dTo);
        String response = emailService.sendEmail(dTo);
        return ResponseEntity.ok().body(response);
-       
+
     }
 }
